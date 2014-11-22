@@ -6,13 +6,59 @@
 				<div class="row">
 					<div class="sel_dis">
 						<img src="img/bikroy.gif" alt="" class="sticker" />
-						<h2>আমাদের সাইট এ স্বাগতম - বাংলাদেশের সবচেয়ে বড় মার্কেটপ্লেস</h2>
-						<h3>ক্রয়-বিক্রয় করুন যেকোনো কিছু! ব্যবহৃত গাড়ি থেকে শুরু করে মোবাইল ফোন এবং কম্পিউটার, অথবা খুঁজে নিন নতুন প্রপার্টি ও চাকরিসহ আরো অনেক কিছু বাংলাদেশে! শুধু নিচ থেকে আপনার এলাকাটি বেছে নিন আর শুরু করে দিন:</h3>
 						
-						<p class="add_pst_f"><a href="post-add.php" class="youradd">ফ্রী বিজ্ঞাপন দিন</a></p>
+						<div class="indx_top">
+							<div class="indx_l">
+								<p class="add_pst_f">
+									<a href="post-add.php" class="youradd btn-success">ফ্রী বিজ্ঞাপন দিন</a>
+								</p>
+							</div>
+							
+							<div class="indx_r">
+								<h4>ক্রয়-বিক্রয় করুন যেকোনো কিছু! ব্যবহৃত গাড়ি থেকে শুরু করে মোবাইল ফোন এবং কম্পিউটার, অথবা খুঁজে নিন নতুন প্রপার্টি ও চাকরিসহ আরো অনেক কিছু বাংলাদেশে! শুধু নিচ থেকে আপনার এলাকাটি বেছে নিন আর শুরু করে দিন:</h4>
+							</div>
+						</div>
+						
+						<div class="indx_icn_cat">
+							<ul>
+								<li>
+									<a href=""><i class="fa fa-automobile"></i> <span>গাড়ি</span></a>
+								</li>
+								
+								<li>
+									<a href=""><i class="fa fa-home"></i> <span>গৃহস্থালি জিনিসপত্র</span></a>
+								</li>
+								
+								<li>
+									<a href=""><i class="fa fa-suitcase"></i> <span>চাকরি</span></a>
+								</li>
+								
+								<li>
+									<a href=""><i class="fa fa-mobile"></i> <span>মোবাইল</span></a>
+								</li>
+								
+								<li>
+									<a href=""><i class="fa fa-desktop"></i> <span>কম্পিউটার</span></a>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="indx_ltst_pr">
+							<?php
+								for($i=1; $i<=6; $i++){
+							?>
+							<div class="col-md-2 sng_ltst">
+								<a href=""><img src="img/ads-item-1.jpg" alt="" /></a>
+								<a href="">
+									<p class="ttl">লেটেস্ট প্রোডাক্টের টাইটেল</p>
+								</a>
+								<p class="loc">ঢাকা, বাংলাদেশ</p>
+								<p class="price">৫৫০০০</p>
+							</div>
+							<?php } ?>
+						</div>
+						
 						<div class="clearfix"></div>
-						
-						
 						
 						<div class="col-md-12 dis_area">
 

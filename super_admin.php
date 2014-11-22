@@ -6,40 +6,78 @@
 					<div class="col-md-12 dshbrd">
 						<div class="tab_area">
 							<!-- Nav tabs -->
-							<ul class="nav nav-tabs col-md-7 col-md-offset-5 main_nv" role="tablist">
-							  <li role="presentation" class="active"><a href="#my_ads" role="tab" data-toggle="tab"><i class="fa fa-files-o"></i> My Ads</a></li>
-							  <li role="presentation"><a href="#selected_ads" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Selected Ads</a></li>
-							  <li role="presentation"><a href="#my_fav_src" role="tab" data-toggle="tab"><i class="fa fa-search"></i> My Favourite Search</a></li>
-							  <li role="presentation"><a href="#settings" role="tab" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a></li>
+							<ul class="nav nav-tabs col-md-12 main_nv" role="tablist">
+							  <li role="presentation" class="active"><a href="#my_ads" role="tab" data-toggle="tab"><i class="fa fa-files-o"></i> All Ads</a></li>
+							  <li role="presentation"><a href="#selected_ads" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Manage Ads</a></li>
+							  <li role="presentation"><a href="#my_fav_src" role="tab" data-toggle="tab"><i class="fa fa-cog"></i> Manage User</a></li>
+							  <li role="presentation"><a href="#settings" role="tab" data-toggle="tab"><i class="fa fa-cog"></i> All Settings</a></li>
 							</ul>
 
 							<!-- Tab panes -->
 							<div class="tab-content col-md-12 main_tb">
 							  <div role="tabpanel" class="tab-pane fade in active" id="my_ads">
-								
-								<ul class="col-md-2 nav nav-tabs ad_status" role="tablist">
-								  <li role="presentation" class="active"><a href="#all" role="tab" data-toggle="tab"><i class="fa fa-square"></i> All (0)</a></li>
-								  <li role="presentation"><a href="#actives" role="tab" data-toggle="tab"><i class="fa fa-square actv"></i> Active (0)</a></li>
-								  <li role="presentation"><a href="#moderated" role="tab" data-toggle="tab"><i class="fa fa-square moderated"></i> Moderated (0)</a></li>
-								  <li role="presentation"><a href="#rejected" role="tab" data-toggle="tab"><i class="fa fa-square rejected"></i> Rejected (0)</a></li>
-								  <li role="presentation"><a href="#inactive" role="tab" data-toggle="tab"><i class="fa fa-square inactive"></i> Inactive (0)</a></li>
-								</ul>
 
 								<div class="col-md-10 tab-content ad_status_tb">
 								  <div role="tabpanel" class="tab-pane fade in active" id="all">
-									<h3>Oh! You have no active add.</h3>
-									<p class="ds">Lets change the situation. You can <a href="post-add.php">Create an add</a> right now.</p>
-									<div class="wht_do">
-										<div class="col-md-1 lft">
-											<i class="fa fa-picture-o"></i>
+									<!--div class="well text-center">
+										<h3>Oh! You have no active add.</h3>
+										<p class="ds">Lets change the situation. You can <a href="post-add.php">Create an add</a> right now.</p>
+										<div class="wht_do">
+											<div class="col-md-1 lft">
+												<i class="fa fa-picture-o"></i>
+											</div>
+											<div class="col-md-11 rht">
+												<p class="ttl">Here you can view or edit your active add.</p>
+												<p class="des">
+													Add photos, Edit the description, Price etc.<br/>
+													Publish new listings fast and convenient way!
+												</p>
+											</div>
 										</div>
-										<div class="col-md-11 rht">
-											<p class="ttl">Here you can view or edit your active add.</p>
-											<p class="des">
-												Add photos, Edit the description, Price etc.<br/>
-												Publish new listings fast and convenient way!
-											</p>
+									</div-->
+									
+									<div class="have_cont">
+										<?php
+											for($i=1; $i<6; $i++){
+										?>
+										<div class="sng_vw_all_ad">									
+											<div class="col-md-2 col-sm-2 img">
+												<a href="single-add.php"><img src="img/ads-item-1.jpg" alt="" /></a>
+											</div>
+											
+											<div class="col-md-10 col-sm-10 ads_info">
+												<div class="col-md-10 col-sm-10 ads_info_l">
+													<p class="ttl"><a href="single-add.php">এটা প্রথম বিজ্ঞাপনের টাইটেল</a></p>
+													<p class="des">ওয়েব ব্রাউজার একটি ভিউয়ার একটি সংগ্রহস্থল থেকে একটি বাংলা ডকুমেন্ট যোগাযোগ জড়িত সফটওয়্যার এর মধ্যে শুধুমাত্র একটি উপাদান. নথিটি কোথাও একটি কম্পিউটারে থাকা, এবং যে..</p>
+													<div class="proprt">
+														<ul>
+															<li>বেবহ্রিত হ্যাঁ</li>
+															<li>পোর্ট ইউএসবি</li>
+															<li>ইত্যাদি</li>
+															<li>ইত্যাদি</li>
+														</ul>
+													</div>
+													<p class="loc">ঢাকা, বাংলাদেশ।</p>
+												</div>
+												
+												<div class="col-md-2 col-sm-2 ads_info_r">
+													<ul>
+														<li>
+															<a href=""><i class="fa fa-check"></i></a>
+														</li>
+														
+														<li>
+															<a href=""><i class="fa fa-times"></i></a>
+														</li>
+														
+														<li>
+															<a href=""><i class="fa fa-cog"></i></a>
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
+										<?php } ?>
 									</div>
 								  </div>
 								  <div role="tabpanel" class="tab-pane fade" id="actives">
@@ -108,16 +146,24 @@
 								  </div>
 								</div>
 								
+								<ul class="col-md-1 col-md-offset-1 nav nav-tabs ad_status spr_admn" role="tablist">
+								  <li role="presentation" class="active"><a href="#all" title="All Ads" role="tab" placement="right" data-toggle="tab"><i class="fa fa-square"></i></a></li>
+								  <li role="presentation"><a href="#actives" title="Active" role="tab" data-toggle="tab"><i class="fa fa-square actv"></i></a></li>
+								  <li role="presentation"><a href="#moderated" title="Moderate" role="tab" data-toggle="tab"><i class="fa fa-square moderated"></i></a></li>
+								  <li role="presentation"><a href="#rejected" title="Rececjed" role="tab" data-toggle="tab"><i class="fa fa-square rejected"></i></a></li>
+								  <li role="presentation"><a href="#inactive" title="Pending" role="tab" data-toggle="tab"><i class="fa fa-square inactive"></i></a></li>
+								</ul>
+								
 							  </div>
 							  <div role="tabpanel" class="tab-pane fade" id="selected_ads">
-								<h3>Oh! You have not chosen the advert.</h3>
+								<h3>Oh! You have not chosen any selected adds.</h3>
 									<p class="ds">Looking for something specific?</p>
 									<div class="wht_do">
 										<div class="col-md-1 lft">
 											<i class="fa fa-star"></i>
 										</div>
 										<div class="col-md-11 rht">
-											<p class="ttl">It stores your favorite ads.</p>
+											<p class="ttl">It stores your selected ads.</p>
 											<p class="des">
 												You can log into your personal cabinet c any computer and view your favorite ads.
 											</p>

@@ -129,27 +129,6 @@ div.header_right div.right_el p a.login i.fa-user {
 }
 
 div.header_right div.right_el p a.youradd, section.content_area div.sel_dis p.add_pst_f a.youradd {
-	/*background: linear-gradient(#ffd972, #ffba49) repeat scroll 0 0 rgba(0, 0, 0, 0);
-	border-color: #f4b244;
-	border-radius: 4px;
-	border-style: solid;
-	border-width: 1px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-	color: #fff;
-	padding: 6px 40px;
-	font-size: 25px;
-	text-shadow: 1px 1px 1px #c99337;*/
-	
-	background: #ffd972; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffd972 0%, #ffba49 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd972), color-stop(100%,#ffba49)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ffd972 0%,#ffba49 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ffd972 0%,#ffba49 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ffd972 0%,#ffba49 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #ffd972 0%,#ffba49 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd972', endColorstr='#ffba49',GradientType=0 ); /* IE6-9 */
-
-border-color: #f4b244;
 	border-radius: 4px;
 	border-style: solid;
 	border-width: 1px;
@@ -161,7 +140,6 @@ border-color: #f4b244;
 
 section.content_area div.sel_dis p.add_pst_f a.youradd:hover{
 	text-decoration: none;
-	opacity: .9;
 }
 
 div.header_right div.right_el p a.youradd:hover{
@@ -170,13 +148,12 @@ div.header_right div.right_el p a.youradd:hover{
 }
 
 div.sel_dis p.add_pst_f {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 /* Search styles */
 
 section.search_area {
-  background: none repeat scroll 0 0 #F1F2F3;
   padding-top: 8px;
 }
 
@@ -247,12 +224,89 @@ border:none;
 /* Content styles */
 
 section.content_area {
-  background: none repeat scroll 0 0 #f1f2f3;
 padding-bottom: 80px;
 }
 
+div.sel_dis div.indx_top{
+margin-bottom: 30px;
+overflow: hidden;
+}
+
+div.sel_dis div.indx_top, div.sel_dis div.indx_icn_cat {
+  overflow: hidden;
+}
+
+div.sel_dis div.indx_icn_cat ul {
+  padding: 0;
+}
+
+div.sel_dis div.indx_icn_cat ul li {
+display: inline-block;
+list-style: outside none none;
+padding: 5px;
+}
+
+div.sel_dis div.indx_icn_cat ul li a {
+border: 1px solid #ddd;
+border-radius: 3px;
+box-shadow: 0 2px 5px #ddd;
+display: block;
+padding: 5px 40px;
+text-decoration:none;
+}
+
+div.sel_dis div.indx_icn_cat ul li a i {
+color: #F1550B;
+font-size: 20px;
+}
+
+div.sel_dis div.indx_icn_cat ul li a span {
+color: #555;
+display: block;
+font-size: 18px;
+}
+
+
+
+
+div.indx_ltst_pr {
+  margin: 60px auto 0;
+  overflow: hidden;
+}
+
+div.indx_ltst_pr div.sng_ltst {
+  
+}
+
+div.indx_ltst_pr div.sng_ltst a img {
+	border: 1px solid #ddd;
+	max-width: 100%;
+	padding: 2px;
+}
+
+div.indx_ltst_pr div.sng_ltst a p.ttl {
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 5px;
+}
+
+
+div.indx_ltst_pr div.sng_ltst p.loc, div.indx_ltst_pr div.sng_ltst p.price {
+	color: #555;
+	font-size: 15px;
+	margin: 0;
+}
+
+
+
+
+
+div.sel_dis div.indx_top div.indx_r {
+  margin-top: 30px;
+}
+
 div.sel_dis {
-margin: 50px auto;
+margin: 0px auto 50px;
 text-align: center;
 }
 
@@ -262,16 +316,16 @@ div.sel_dis img.sticker {
   top: 300px;
 }
 
-div.sel_dis h2 {
+div.sel_dis h3 {
   color: #555;
   font-weight: 700;
 }
 
-div.sel_dis h3 {
+div.sel_dis h4 {
 color: #777;
-font-size: 20px;
+font-size: 18px;
 font-weight: 300;
-line-height: 35px;
+line-height: 25px;
 margin-top: 10px;
 }
 
@@ -603,19 +657,29 @@ padding: 0 0 0 15px;
 
 
 
+div.vw_all_ad_r {
+  box-shadow: 0 0 5px #ccc;
+  margin: 25px auto;
+}
+
 div.vw_all_ad_r h2 {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 div.vw_all_ads {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 div.vw_all_ad div.sng_vw_all_ad {
-  border: 1px solid #DDDDDD;
-  border-radius: 2px;
-  overflow:hidden;
-  margin-bottom: 10px;
+background: none repeat scroll 0 0 #fff;
+border-bottom: 1px solid #ccc;
+border-radius: 2px;
+margin-bottom: 2px;
+overflow: hidden;
+}
+
+div.vw_all_ad div.sng_vw_all_ad:hover {
+  background: none repeat scroll 0 0 #eee;
 }
 
 div.sng_vw_all_ad div.time_info {
@@ -625,18 +689,21 @@ padding: 25px 10px;
 }
 
 div.sng_vw_all_ad div.time_info p{
+color: #555;
+font-size: 15px;
 margin: 0;
 text-align: center;
 }
 
 div.sng_vw_all_ad div.img {
-  border-right: 1px solid #DDDDDD;
-  height: 100px;
+padding: 10px;
 }
 
 div.sng_vw_all_ad div.img a img {
-  height: 100px;
-max-width: 100%;
+border: 1px solid #ddd;
+height: 120px;
+width: 120px;
+padding: 3px;
 }
 
 div.sng_vw_all_ad div.ads_info {
@@ -644,7 +711,6 @@ div.sng_vw_all_ad div.ads_info {
 }
 
 div.sng_vw_all_ad div.ads_info div.ads_info_l {
-height: 100px;
 padding: 10px 10px 10px 0;
 }
 
@@ -653,13 +719,40 @@ div.sng_vw_all_ad div.ads_info div.ads_info_l p {
 }
 
 div.sng_vw_all_ad div.ads_info div.ads_info_l p.ttl a {
-  color: #555;
-  font-weight:bold;
+color: #00547e;
+font-size: 18px;
+}
+
+div.sng_vw_all_ad div.ads_info div.ads_info_l div.proprt {
+color: #555;
+margin: 5px auto;
+overflow: hidden;
+}
+
+div.sng_vw_all_ad div.ads_info div.ads_info_l div.proprt ul {
+  padding: 0;
+}
+
+div.sng_vw_all_ad div.ads_info div.ads_info_l div.proprt ul li {
+border-right: 1px solid #bbb;
+float: left;
+list-style: outside none none;
+padding: 0 5px;
+}
+
+div.sng_vw_all_ad div.ads_info div.ads_info_l div.proprt ul li:last-child {
+	border-right: none;
+}
+
+div.sng_vw_all_ad div.ads_info div.ads_info_l div.proprt ul li:after{
+  content: "";
 }
 
 div.sng_vw_all_ad div.ads_info div.ads_info_l p.loc {
-color: #999;
-font-size: 12px;
+color: #555;
+font-size: 14px;
+font-weight: bold;
+line-height: 25px;
 }
 
 div.sng_vw_all_ad div.ads_info div.ads_info_r {
@@ -668,17 +761,26 @@ padding: 10px 0;
 text-align: center;
 }
 
+div.sng_vw_all_ad div.ads_info div.ads_info_r p.tme {
+  margin: 25px auto 0;
+}
+
 div.sng_vw_all_ad div.ads_info div.ads_info_r p {
-  margin: 0;
+color: #555;
+font-size: 16px;
+margin: 0;
 }
 
 
 /* Single adds styles */
 
 div.vw_all_ad div.add_ttls {
-border: 1px solid #DDDDDD;
-margin: 10px auto;
 overflow: hidden;
+}
+
+div.add_sec div.lft div.add_ttls div.lft {
+  border: medium none;
+  padding: 0;
 }
 
 div.add_ttls div.lft h2 {
@@ -693,51 +795,54 @@ div.add_ttls div.rht h2 {
 }
 
 
+div.vw_all_ad {
+  margin: 30px auto;
+}
+
 div.add_sec div.lft {
 border: 1px solid #DDDDDD;
 margin: 0 auto 15px;
 padding: 15px;
 }
 
-div.add_sec div.lft div.options ul{
+div.add_sec div.rht div.options ul{
 display: block;
 overflow: hidden;
 padding: 0;
 width: 100%;
 }
 
-div.add_sec div.lft div.options ul li{
-border: 1px solid #DDDDDD;
-float: left;
-list-style: none outside none;
-margin-right: 10px;
+div.add_sec div.rht div.options ul li{
+border: 1px solid #dddddd;
+list-style: outside none none;
+margin: 3px auto;
 }
 
-div.add_sec div.lft div.options ul li a{
-display: inline-block;
+div.add_sec div.rht div.options ul li a{
+display: block;
 font-family: verdana;
 padding: 8px 20px;
 }
 
-div.add_sec div.lft div.options ul li a:hover{
+div.add_sec div.rht div.options ul li a:hover{
 text-decoration:none;
 }
 
-div.add_sec div.lft div.options ul li a i {
+div.add_sec div.rht div.options ul li a i {
 font-size: 25px;
 padding-right: 5px;
 vertical-align: middle;
 }
 
-div.add_sec div.lft div.options ul li a i.fa-pencil {
+div.add_sec div.rht div.options ul li a i.fa-pencil {
   color: #6BA54C;
 }
 
-div.add_sec div.lft div.options ul li a i.fa-times-circle {
+div.add_sec div.rht div.options ul li a i.fa-times-circle {
   color: #D3473C;
 }
 
-div.add_sec div.lft div.options ul li a i.fa-reply {
+div.add_sec div.rht div.options ul li a i.fa-reply {
   color: #5C9DDC;
 }
 
@@ -754,7 +859,7 @@ max-width: 100%;
 }
 
 div.adds_img div.sml_img {
-padding-right: 0;
+margin: 25px auto 10px;
 }
 
 div.adds_img div.sml_img img {
@@ -767,6 +872,27 @@ div.adds_img div.sml_img img {
 div.adds_det div.lft {
   border: medium none;
   padding: 8px 2px;
+}
+
+
+
+div.adds_det div.lft div.sngl_row, div.adds_det div.rht div.sngl_row {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+div.adds_det div.lft div.sngl_row p, div.adds_det div.rht div.sngl_row p {
+  font-family: verdana;
+  margin: 5px auto;
+  font-size: 13px;
+}
+
+div.adds_det div.lft div.sngl_row p.pull-right, div.adds_det div.rht div.sngl_row p.pull-right {
+  font-weight: bold;
+}
+
+div.add_sec div.adds_det div.descriptions {
+  padding: 0;
 }
 
 div.adds_det div.rht {
@@ -864,6 +990,36 @@ div.add_sec div.rht div.shring ul li a {
 }
 div.add_sec div.rht div.shring ul li a i {
     font-size: 25px;
+}
+
+
+div.add_sec div.rht div.stay_safe div.carousel a.carousel-control {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
+div.add_sec div.rht div.stay_safe div.carousel div.col-xs-6 {
+margin-left: 15%;
+padding-bottom: 20px;
+width: 75%;
+}
+
+div.add_sec div.rht div.stay_safe div.carousel div.col-xs-6 h3{
+
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+	font-size: 20px;
+	color: #333;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{
+	font-size: 20px;
+	color: #333;
+}
+
+div.add_sec div.rht div.stay_safe div.carousel {
+  border: 1px solid #ddd;
 }
 
 
@@ -1084,11 +1240,15 @@ div.txt_pg_b div.txts ol.terms li ol li span {
 /* Dashboard Styles */
 
 div.dshbrd div.tab_area {
-border: 1px solid #ddd;
 border-radius: 4px;
 font-family: verdana;
 margin: 50px auto;
-padding: 20px;
+}
+
+div.dshbrd div.tab_area ul.main_nv {
+  float: left;
+  overflow: hidden;
+  padding:0;
 }
 
 div.dshbrd div.tab_area ul.nav-tabs {
@@ -1114,6 +1274,16 @@ div.dshbrd div.tab_area ul.nav-tabs li a {
 	color: #555;
 }
 
+div.dshbrd div.tab_area div.main_tb {
+  margin: 0 auto 30px;
+  overflow: hidden;
+  padding: 0;
+}
+
+div.dshbrd div.tab_area ul.main_nv li {
+  min-width: 145px;
+}
+
 div.dshbrd div.tab_area ul.nav-tabs li.active a {
 background-color: #6ca350;
 border: 1px solid #41672d;
@@ -1128,6 +1298,10 @@ div.dshbrd div.tab_area ul.nav-tabs li a i {
 font-size: 20px;
 padding-right: 8px;
 vertical-align: middle;
+}
+
+div.dshbrd div.tab_area div.tab-pane {
+  overflow: hidden;
 }
 
 div.dshbrd div.tab_area ul.nav-tabs li a i.actv {
@@ -1148,12 +1322,13 @@ div.dshbrd div.tab_area ul.nav-tabs li a i.inactive {
 
 
 div.dshbrd div.tab_area ul.ad_status {
-  border: 1px solid #ddd;
   margin-bottom: 0px;
+  padding:0;
 }
 
 div.dshbrd div.tab_area ul.ad_status li {
-  border: medium none;
+  border-right: 1px solid #ddd;
+  float: none;
 }
 
 div.dshbrd div.tab_area ul.ad_status li.active a {
@@ -1161,7 +1336,7 @@ div.dshbrd div.tab_area ul.ad_status li.active a {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  background: none repeat scroll 0 0 #eee;
+  background: none repeat scroll 0 0 #e1e8e0;
   border-color: -moz-use-text-color -moz-use-text-color #4e8f2d;
   border-image: none;
   border-style: none none solid;
@@ -1176,12 +1351,73 @@ div.dshbrd div.tab_area ul.ad_status li a {
   color: #555;
   font-size: 13px;
   line-height: 24px;
+  padding: 10px 8px;
 }
 
 div.dshbrd div.tab_area div.ad_status_tb {
-  border: 1px solid #ddd;
-  padding: 20px 15px;
+
 }
+
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont {
+  border-bottom: 1px solid #ddd;
+  font-family: solaimanlipinormal;
+  overflow: hidden;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad p.ttl, div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad p.des {
+  font-weight: normal;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad {
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad:hover {
+  background: none repeat scroll 0 0 #eee;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn{
+
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li{
+
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li a{
+
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li a i{
+
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li a i:hover{
+
+}
+
+
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul{
+padding: 0;
+text-align: right;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li{
+display: inline-block;
+list-style: outside none none;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li a{
+
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li a i{
+
+}
+
 
 div.dshbrd div.tab_area div.ad_status_tb div.active {
 

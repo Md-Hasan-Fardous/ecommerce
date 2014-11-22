@@ -3,7 +3,7 @@
 		<section class="registration">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 reg_area">						
+					<div class="col-md-12 reg_area">						
 						<div class="reg">
 							<div class="col-md-8 lft">
 								<div class="reg_head">

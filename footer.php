@@ -2,10 +2,6 @@
 			<div class="container">
 				<div class="row">				
 					<div class="footer">
-						<div class="col-md-4 copyright">
-							<p>&copy; আমাদের সাইট, কর্তৃক স্বত্বাধিকার সংরক্ষিত</p>
-						</div>
-						
 						<div class="col-md-8 ftr_wid_ar">
 							<div class="col-md-4 ftr_wid">
 								<p class="ttl">
@@ -41,6 +37,9 @@
 							</div>
 						</div>
 						
+						<div class="col-md-4 copyright">
+							<p>&copy; আমাদের সাইট, কর্তৃক স্বত্বাধিকার সংরক্ষিত</p>
+						</div>
 					</div>
 				</div>
 			</div>
