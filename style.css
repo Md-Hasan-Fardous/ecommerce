@@ -32,8 +32,12 @@ a{
 
 
 header{
-background: none repeat scroll 0 0 #6ca350;
-border-bottom: 1px solid #ddd;
+background-color: #5cb85c;
+border-color: #4cae4c;
+color: #fff;
+background-image: linear-gradient(to bottom, #5cb85c 0px, #419641 100%);
+background-repeat: repeat-x;
+border-color: #3e8f3e;
 }
 
 div.slicknav_menu{
@@ -589,7 +593,12 @@ div.texts_innr p {
 }
 
 section.footer_area {
-  background: none repeat scroll 0 0 #6ca350;
+background-color: #5cb85c;
+border-color: #4cae4c;
+color: #fff;
+background-image: linear-gradient(to bottom, #5cb85c 0px, #419641 100%);
+background-repeat: repeat-x;
+border-color: #3e8f3e;
 }
 
 
@@ -1285,10 +1294,13 @@ div.dshbrd div.tab_area ul.main_nv li {
 }
 
 div.dshbrd div.tab_area ul.nav-tabs li.active a {
-background-color: #6ca350;
-border: 1px solid #41672d;
-border-radius: 0;
+background-color: #5cb85c;
+border-color: #4cae4c;
 color: #fff;
+background-image: linear-gradient(to bottom, #5cb85c 0px, #419641 100%);
+background-repeat: repeat-x;
+border-color: #3e8f3e;
+border-radius: 0;
 margin: 0;
 text-decoration: none;
 line-height: 23px;
@@ -1355,7 +1367,7 @@ div.dshbrd div.tab_area ul.ad_status li a {
 }
 
 div.dshbrd div.tab_area div.ad_status_tb {
-
+padding: 0;
 }
 
 
@@ -1378,6 +1390,55 @@ div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_a
   background: none repeat scroll 0 0 #eee;
 }
 
+div.dshbrd div.tab_area div.main_tb div.users_area div.tab-content div.tab-pane div.have_cont div.sng_vw_all_ad, div.dshbrd div.tab_area div.main_tb div.issues_area div.tab-content div.tab-pane div.have_cont div.sng_vw_all_ad {
+  padding: 0 15px;
+}
+
+div.dshbrd div.tab_area div.tab-content div.issues_area div.tab-content div.tab-pane div.have_cont div.sng_vw_all_ad div.users div.ads_info_r ul li a {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  border: medium none !important;
+  padding: 0 !important;
+}
+
+div.dshbrd div.tab_area div.tab-content div.issues_area ul.nav-tabs li {
+  margin: 0 !important;
+  border: none !important;
+}
+
+div.dshbrd div.tab_area div.tab-content div.issues_area ul.nav-tabs li a {
+display: block !important;
+background: none !important;
+}
+
+div.dshbrd div.tab_area div.tab-content div.issues_area ul.nav-tabs li.active a {
+border-bottom: medium none;
+border-left: 4px solid green !important;
+border-right: 1px solid #ddd !important;
+}
+
+div.dshbrd div.tab_area div.main_tb div.users_area div.tab-content div.tab-pane div.have_cont div.sng_vw_all_ad div.users div.proprt ul li {
+  padding: 0 10px;
+}
+
+div.dshbrd div.tab_area div.main_tb div.users_area div.tab-content div.tab-pane div.have_cont div.sng_vw_all_ad div.users div.proprt ul li:first-child {
+  padding-left: 0;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane div.sng_vw_all_ad p {
+margin: 0;
+padding-right: 15px;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane div.sng_vw_all_ad i {
+  color: #555;
+margin: 5px 5px 0;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane div.sng_vw_all_ad span {
+  color: #555;
+}
+
+
 div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn{
 
 }
@@ -1387,15 +1448,63 @@ div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li{
 }
 
 div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li a{
-
+text-align: center;
 }
 
 div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li a i{
-
+display: block;
+text-align: center;
 }
 
 div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li a i:hover{
 
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li.active a {
+border-bottom: medium none;
+border-left: 4px solid green;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li:first-child a i {
+  color: green;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li:nth-child(2) a i {
+  color: orange;
+}
+
+div.dshbrd div.tab_area div.tab-content div.tab-pane ul.spr_admn li:last-child a i {
+  color: #bbb;
+}
+
+.inactive{
+	color: #555 !important;
+}
+
+.actv{
+	color: green !important;
+}
+
+.blck{
+	color: orange !important;
+}
+
+.rejected {
+	color: #d14841 !important;
+}
+
+div.dshbrd div.tab_area div.tab-content div.users_area, div.dshbrd div.tab_area div.tab-content div.issues_area {
+  border: medium none !important;
+  padding: 0 !important;
+}
+
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont ul.pagination li.active a {
+  border: 1px solid #ddd;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont ul.pagination li a {
+  border: 1px solid #ddd;
 }
 
 
@@ -1406,16 +1515,55 @@ text-align: right;
 }
 
 div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li{
-display: inline-block;
 list-style: outside none none;
 }
 
-div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li a{
+ul#issues_act li{
+	margin: 0 !important;
+}
 
+ul#issues_pag li.active a{
+background-image: linear-gradient(to bottom, #5cb85c 0px, #419641 100%) !important;
+background-repeat: repeat-x !important;
+border-color: #3e8f3e !important;
+color: #fff !important;
+cursor: default !important;
+z-index: 2 !important;
+}
+
+ul#issues_pag li a{
+background-color: #fff !important;
+border: 1px solid #ddd !important;
+color: #428bca !important;
+float: left !important;
+line-height: 1.42857 !important;
+margin-left: -1px !important;
+padding: 6px 12px !important;
+position: relative !important;
+text-decoration: none !important;
+}
+
+div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li a, ul#issues_act li a{
+border: 1px solid #888 !important;
+display: inline-block;
+margin-bottom: 8px !important;
+padding: 2px 15px !important;
+text-align: center;
+width: 50px !important;
 }
 
 div.dshbrd div.tab_area div.ad_status_tb div.tab-pane div.have_cont div.sng_vw_all_ad div.ads_info_r ul li a i{
+text-align: center;
+margin: 0;
+}
 
+div.no_fav_ads {
+	
+}
+
+div.no_fav_ads i {
+	color: #419641;
+font-size: 60px;
 }
 
 
